@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RACEUR™ — Every street is a start line</title>
+<meta name="description" content="RACEUR™ is the social racing platform for runners, riders and drivers who create. Train against live rivals, race your crew through checkpoints, and turn every session into content.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#070707; --fg:#f4f4f4; --muted:#8f8f8f; --soft:#cfcfcf; --accent:#ffe000; --red:#ff2d55; --line:#1e1e1e; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:Inter, system-ui, sans-serif; line-height:1.6; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 20px; }
+  header { padding:26px 0; display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-family:Audiowide, sans-serif; font-size:22px; letter-spacing:5px; color:var(--fg); text-decoration:none; }
+  .logo sup, h1 sup { font-family:Inter, sans-serif; font-size:.35em; letter-spacing:0; vertical-align:super; color:var(--muted); }
+  nav a { color:var(--muted); text-decoration:none; font-size:14px; margin-left:20px; }
+  nav a:hover { color:var(--fg); }
+
+  .hero { padding:80px 0 72px; position:relative; }
+  .hero::after { content:""; position:absolute; left:0; right:0; bottom:0; height:2px;
+    background:linear-gradient(90deg, var(--accent) 0 18%, transparent 18% 22%, var(--accent) 22% 40%, transparent 40% 44%, var(--accent) 44% 62%, transparent 62%); opacity:.85; }
+  .kicker { font-family:Audiowide, sans-serif; color:var(--accent); letter-spacing:4px; font-size:13px; margin:0 0 18px; }
+  h1 { font-family:Audiowide, sans-serif; font-size:clamp(38px, 8vw, 76px); line-height:1.02; margin:0 0 24px; letter-spacing:1px; }
+  h1 em { font-style:normal; color:var(--accent); }
+  .lead { font-size:clamp(17px, 2.4vw, 20px); color:var(--soft); max-width:640px; margin:0 0 32px; }
+  .row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+  .badge { border:1px solid var(--accent); color:var(--accent); padding:9px 18px; border-radius:999px; font-size:14px; font-weight:600; }
+  .ghost { color:var(--soft); text-decoration:none; font-size:14px; padding:9px 4px; }
+  .ghost:hover { color:var(--fg); }
+
+  section { padding:64px 0; border-top:1px solid var(--line); }
+  .label { font-family:Audiowide, sans-serif; color:var(--muted); letter-spacing:4px; font-size:12px; margin:0 0 10px; }
+  h2 { font-family:Audiowide, sans-serif; font-size:clamp(24px, 4vw, 34px); margin:0 0 28px; line-height:1.15; }
+
+  .pillars { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:16px; }
+  .pillar { border:1px solid var(--line); border-radius:14px; padding:24px; background:linear-gradient(180deg, #0f0f0f, #0a0a0a); }
+  .pillar .num { font-family:Audiowide, sans-serif; color:var(--accent); font-size:13px; letter-spacing:3px; }
+  .pillar h3 { font-family:Audiowide, sans-serif; font-size:22px; margin:8px 0 10px; letter-spacing:2px; }
+  .pillar p { color:var(--soft); margin:0 0 14px; font-size:15px; }
+  .pillar ul { margin:0; padding:0; list-style:none; }
+  .pillar li { color:var(--muted); font-size:14px; padding:6px 0; border-top:1px solid var(--line); }
+
+  .modes { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:16px; }
+  .mode { padding:20px 0; border-top:2px solid var(--accent); }
+  .mode h3 { font-family:Audiowide, sans-serif; margin:0 0 6px; letter-spacing:2px; font-size:18px; }
+  .mode p { margin:0; color:var(--muted); font-size:14px; }
+
+  .quote { font-family:Audiowide, sans-serif; font-size:clamp(22px, 4vw, 32px); line-height:1.25; margin:0; max-width:760px; }
+  .quote em { font-style:normal; color:var(--accent); }
+  .sign { font-family:Audiowide, sans-serif; letter-spacing:5px; font-size:22px; margin:22px 0 0; color:var(--fg); }
+  .sign sup { font-family:Inter, sans-serif; font-size:.35em; letter-spacing:0; color:var(--muted); vertical-align:super; }
+
+  .safety { color:var(--soft); margin:0; max-width:680px; }
+  footer { padding:36px 0 52px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="./">RACEUR<sup>™</sup></a>
+      <nav>
+        <a href="https://instagram.com/raceurapp" target="_blank" rel="noopener">Instagram</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:raceursupport@gmail.com">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <p class="kicker">TRAIN · RACE · CREATE</p>
+      <h1>Every street<br>is a <em>start line.</em></h1>
+      <p class="lead">RACEUR<sup>™</sup> is the social racing platform for runners, riders and drivers who create. Chase live rivals, race your crew through the city, and turn every session into content worth posting, straight from your phone.</p>
+      <div class="row">
+        <span class="badge">App Store · January 2027</span>
+        <a class="ghost" href="mailto:raceursupport@gmail.com?subject=RACEUR%20beta">Join the beta →</a>
+      </div>
+    </div>
+
+    <section>
+      <p class="label">THE PLATFORM</p>
+      <h2>One app. Your training, your races, your content.</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="num">01</span>
+          <h3>TRAIN</h3>
+          <p>Every run, ride and drive gets an opponent. Rivals appear on your route and push your pace in real time.</p>
+          <ul>
+            <li>AI rivals in Pacer, Racer and Elite tiers</li>
+            <li>Overtake combos that reward sustained effort</li>
+            <li>Daily challenges, streaks and personal bests</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <span class="num">02</span>
+          <h3>RACE</h3>
+          <p>Bring the crew. Start a race with a six-letter code and see who knows the streets.</p>
+          <ul>
+            <li>Cat Raceur: alleycat-style checkpoint races</li>
+            <li>Live riders nearby to overtake head to head</li>
+            <li>Leaderboards and Route Boss spots to defend</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <span class="num">03</span>
+          <h3>CREATE</h3>
+          <p>Your phone becomes the camera, the dashboard and the broadcast truck.</p>
+          <ul>
+            <li>Racing-style HUD over live camera</li>
+            <li>HUD and raw footage recorded at the same time</li>
+            <li>Go live to Twitch, YouTube, TikTok or Kick with chat on screen</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p class="label">MODES</p>
+      <h2>Built for how you move.</h2>
+      <div class="modes">
+        <div class="mode"><h3>RUN</h3><p>Chest-mount friendly HUD for road races, 5Ks and city long runs.</p></div>
+        <div class="mode"><h3>RIDE</h3><p>Handlebar-ready for group rides, crits and alleycats.</p></div>
+        <div class="mode"><h3>CIRCUIT</h3><p>Landscape dash view for track days, karting and moto.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <p class="quote">Race your <em>city.</em></p>
+      <p class="sign">RACEUR<sup>™</sup></p>
+    </section>
+
+    <section>
+      <p class="label">RACE RESPONSIBLY</p>
+      <p class="safety">Follow traffic laws and your event's rules. Mount your phone securely and keep your eyes up. Timed racing for cars and motorcycles belongs on closed tracks.</p>
+    </section>
+
+    <footer>
+      © 2026 RACEUR<sup>™</sup> ·
+      <a href="https://instagram.com/raceurapp" target="_blank" rel="noopener">@raceurapp</a> ·
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="mailto:raceursupport@gmail.com">raceursupport@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
